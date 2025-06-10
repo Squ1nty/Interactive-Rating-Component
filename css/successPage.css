@@ -1,11 +1,64 @@
+@media(max-width: 424px){
+  #successPage.active{
+      padding: 2rem 1.25rem;
+  }
+  #appreciationTextContainer{
+    padding-top: 2rem;
+  }
+  #ratingChosenDisplayContainer{
+    margin-top: 1.25rem;
+  }
+}
+@media(min-width: 425px){
+  #successPage.active{
+    padding: 3.5rem 2.25rem;
+  }
+  #appreciationParagraph{
+    font-size: 1.25rem;
+    line-height: 1.85rem;
+  }
+  #appreciationTextContainer{
+    padding-top: 3rem;
+  }
+  #ratingChosenDisplayContainer{
+    margin-top: 1.75rem;
+  }
+}
 #successPage{
   display: none;
 }
 #successPage.active{
-  height: 100vh;
+  max-width: 425px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 2rem;
+}
+#ratingChosenDisplayContainer{
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(205, 17%, 20%);
+
+  color: hsl(25, 97%, 53%);
+  font-size: 0.9rem;
+}
+#appreciationTextContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+#thankYouHeading{
+  font-size: 1.75rem;
+  color: hsl(0, 100%, 100%);
+}
+#appreciationParagraph{
+  color: hsl(217, 12%, 63%);
+  text-align: center;
 }

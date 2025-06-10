@@ -9,12 +9,25 @@ let userInputSpan = document.getElementById("userInput");
 let buttonClicked;
 let isClicked = false;
 
+function alreadyClicked(){
+  ratingBtns.forEach(btn => {
+    if(btn.classList.contains("active")){
+      btn.classList.remove("active");
+    }
+  });
+}
+
 ratingBtns.forEach(btn => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
 
+    alreadyClicked();
+
     buttonClicked = btn.dataset.value;
     isClicked = true;
+
+    e.target.classList.remove("active");
+    e.target.classList.add("active");
     submitBtn.classList.remove("enableActive");
     submitBtn.classList.add("enableActive");
   })

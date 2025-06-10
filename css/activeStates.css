@@ -1,0 +1,11 @@
+.ratingBtn:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(205, 17%, 20%);
+}
+.ratingBtn.active{
+  background-color: hsl(0, 100%, 100%);
+  color: hsl(205, 17%, 20%);
+}
+#submitBtn.enableActive:hover{
+  background-color: hsl(0, 100%, 100%);
+}
